@@ -4,7 +4,7 @@
 
 The plugin depends on the [`tsquare`](https://www.npmjs.com/package/tsquare) package and gets everything from it: parsing and checking (`compileWireframe`), rendering (`renderWireframeSvg`, `boardLayout`) and the zoomable viewer (`tsquare/viewer`). esbuild picks tsquare's browser build (the `browser` export condition): SVG only, the Inter font embedded, no Node APIs, so the same `main.js` runs on desktop and mobile. The language lives in the [tsquare repo](https://github.com/tsquare-js/tsquare).
 
-**For now `package.json` points at a local checkout** (`file:../wireframe`), because the browser build isn't released yet (tsquare-js/tsquare#23). Clone the library next to this repo as `wireframe/` and run `npm install && npm run build` there first. Once it's released, pin the version here like the VS Code extension does; CI can't install a `file:` dependency, so it fails until then.
+`tsquare` is pinned to one release (the browser build arrived in 0.10.0). To try a change to the library before it's released, point the plugin at a local checkout without saving it to `package.json`: `npm install ../tsquare --no-save` (build the library first), then `npm run build`. `npm ci` puts the pinned release back.
 
 ## Develop
 
