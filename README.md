@@ -30,7 +30,7 @@ Wireframes are drawn on your device, by the tsquare library bundled into the plu
 
 ## Install
 
-From **Settings → Community plugins → Browse**, search for "tsquare" (once it's listed). Until then, copy `main.js`, `manifest.json` and `styles.css` from the [latest release](https://github.com/individual11/tsquare-obsidian-plugin/releases) to `<your vault>/.obsidian/plugins/tsquare/`, then turn it on under **Settings → Community plugins**. Works on desktop and mobile.
+From **Settings → Community plugins → Browse**, search for "tsquare" (once it's listed). Until then, copy `main.js`, `manifest.json` and `styles.css` from the [latest release](https://github.com/tsquare-js/tsquare-obsidian-plugin/releases) to `<your vault>/.obsidian/plugins/tsquare/`, then turn it on under **Settings → Community plugins**. Works on desktop and mobile.
 
 ## License
 

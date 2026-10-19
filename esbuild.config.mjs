@@ -12,7 +12,7 @@ import { licenseNotices } from "./licenses.mjs";
 const production = process.argv[2] === "production";
 
 const context = await esbuild.context({
-  banner: { js: "/* Bundled by esbuild. Source: https://github.com/individual11/tsquare-obsidian-plugin */" },
+  banner: { js: "/* Bundled by esbuild. Source: https://github.com/tsquare-js/tsquare-obsidian-plugin */" },
   entryPoints: ["src/main.ts"],
   bundle: true,
   // Provided by Obsidian at runtime
