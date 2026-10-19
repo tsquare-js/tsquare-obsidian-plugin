@@ -18,7 +18,7 @@ board "Sign in"
 ```
 ````
 
-In reading view and live preview, the block shows the board, sized to fit the note. Select the board (or its expand button) to open it full size: zoom with the buttons, a pinch or Ctrl/Cmd + scroll, drag to pan, and select a screen's name to zoom to it. Keys in that view: `+` and `-` zoom, `0` fits the board, Esc closes it.
+In reading view and live preview, the block shows the board, sized to fit the note. In live preview, like any code block, it shows its text while the cursor is inside it: click outside the block (or press Cmd/Ctrl+E for reading view) to see the board again. Select the board (or its expand button) to open it full size: zoom with the buttons, a pinch or Ctrl/Cmd + scroll, drag to pan, and select a screen's name to zoom to it. Keys in that view: `+` and `-` zoom, `0` fits the board, Esc closes it.
 
 If the text has a mistake, the block lists each problem with its line number, with a "did you mean" when there's a close match.
 
