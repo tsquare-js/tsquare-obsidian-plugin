@@ -19,7 +19,8 @@ jobs:
       - run: npm run build
       - name: Tag matches the manifest
         run: test "${GITHUB_REF_NAME}" = "$(node -p 'require("./manifest.json").version')"
-      - uses: actions/attest-build-provenance@v2
+      # the community directory checks release assets for these (as in Obsidian's sample plugin)
+      - uses: actions/attest@v4
         with:
           subject-path: |
             main.js

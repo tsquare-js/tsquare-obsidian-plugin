@@ -45,7 +45,7 @@
 }
 .tsquare-modal .modal-content { flex: 1; min-height: 0; display: flex; flex-direction: column; gap: var(--size-4-2); }
 .tsquare-toolbar { display: flex; align-items: center; gap: var(--size-4-2); flex-shrink: 0; }
-.tsquare-screens { display: flex; gap: var(--size-4-1); flex: 1; min-width: 0; overflow-x: auto; scrollbar-width: none; }
+.tsquare-screens { display: flex; gap: var(--size-4-1); flex: 1; min-width: 0; overflow-x: auto; }
 .tsquare-screens button { white-space: nowrap; font-size: var(--font-ui-small); }
 .tsquare-screens button[aria-pressed="true"] { background: var(--interactive-accent); color: var(--text-on-accent); }
 .tsquare-zoom { display: flex; align-items: center; gap: var(--size-4-1); flex-shrink: 0; }
