@@ -1,7 +1,7 @@
 {
   "id": "tsquare",
   "name": "tsquare",
-  "version": "0.1.1",
+  "version": "0.2.0",
   "minAppVersion": "1.0.0",
   "description": "Render UI wireframes from tsquare code blocks: multi-screen boards with notes and flow arrows.",
   "author": "David Vogeleer",

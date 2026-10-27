@@ -3,7 +3,7 @@
  * disk, no network). Results are cached by source text: Obsidian re-renders a block whenever its
  * section of the note redraws, and most of those times the text hasn't changed.
  */
-import { boardLayout, compileWireframe, renderWireframeSvg } from "tsquare";
+import { compileWireframe, measureBoardLayout, renderWireframeSvg } from "tsquare";
 import type { BoardItem } from "tsquare/viewer";
 
 export type Board = { svg: string; width: number; height: number; items: BoardItem[]; title?: string };
@@ -30,8 +30,9 @@ export function renderBoard(source: string): Promise<Rendered> {
 async function render(source: string): Promise<Rendered> {
   const { spec, issues } = compileWireframe(source);
   if (!spec || issues.length) return { problems: issues };
-  const svg = await renderWireframeSvg(spec, { skipValidation: true }); // compileWireframe validated it
-  const { width, height, items } = boardLayout(spec);
+  // compileWireframe validated it. The layout is the exact one (notes measured as drawn), so the
+  // image's size and the viewer's screen chips match the SVG.
+  const [svg, { width, height, items }] = await Promise.all([renderWireframeSvg(spec, { skipValidation: true }), measureBoardLayout(spec)]);
   const title = (spec.elements[spec.root]?.props as { title?: string } | undefined)?.title;
   return { board: { svg, width, height, items, title } };
 }
