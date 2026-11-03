@@ -1,5 +1,8 @@
 # tsquare for Obsidian
 
+[![CI](https://github.com/tsquare-js/tsquare-obsidian-plugin/actions/workflows/ci.yml/badge.svg?branch=main)](https://github.com/tsquare-js/tsquare-obsidian-plugin/actions/workflows/ci.yml)
+[![Release](https://img.shields.io/github/v/release/tsquare-js/tsquare-obsidian-plugin)](https://github.com/tsquare-js/tsquare-obsidian-plugin/releases/latest)
+
 Draw UI wireframes in your notes with [tsquare](https://tsquare.dev), a small text language for wireframe boards: screens side by side, notes, flow arrows, in clean grayscale. It's easy for AI models to write, so you can paste in what one wrote and see it right away.
 
 ## Use it
